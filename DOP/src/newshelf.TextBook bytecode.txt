@@ -1,0 +1,156 @@
+Classfile /C:/Users/nivin/Downloads/ASSG10/newshelf/TextBook.class
+  Last modified 24-Oct-2024; size 1215 bytes
+  SHA-256 checksum b1b2ac74f3fe91ac8ad68d947c8be694253dc2b68e44fa263e881285350d8c81
+  Compiled from "TextBook.java"
+public final class newshelf.TextBook extends java.lang.Record implements newshelf.IBook
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // newshelf/TextBook
+  super_class: #2                         // java/lang/Record
+  interfaces: 1, fields: 1, methods: 6, attributes: 4
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Record."<init>":()V
+   #2 = Class              #4             // java/lang/Record
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Record
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // newshelf/TextBook.subject:Ljava/lang/String;
+   #8 = Class              #10            // newshelf/TextBook
+   #9 = NameAndType        #11:#12        // subject:Ljava/lang/String;
+  #10 = Utf8               newshelf/TextBook
+  #11 = Utf8               subject
+  #12 = Utf8               Ljava/lang/String;
+  #13 = InvokeDynamic      #0:#14         // #0:toString:(Lnewshelf/TextBook;)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // toString:(Lnewshelf/TextBook;)Ljava/lang/String;
+  #15 = Utf8               toString
+  #16 = Utf8               (Lnewshelf/TextBook;)Ljava/lang/String;
+  #17 = InvokeDynamic      #0:#18         // #0:hashCode:(Lnewshelf/TextBook;)I
+  #18 = NameAndType        #19:#20        // hashCode:(Lnewshelf/TextBook;)I
+  #19 = Utf8               hashCode
+  #20 = Utf8               (Lnewshelf/TextBook;)I
+  #21 = InvokeDynamic      #0:#22         // #0:equals:(Lnewshelf/TextBook;Ljava/lang/Object;)Z
+  #22 = NameAndType        #23:#24        // equals:(Lnewshelf/TextBook;Ljava/lang/Object;)Z
+  #23 = Utf8               equals
+  #24 = Utf8               (Lnewshelf/TextBook;Ljava/lang/Object;)Z
+  #25 = Class              #26            // newshelf/IBook
+  #26 = Utf8               newshelf/IBook
+  #27 = Utf8               (Ljava/lang/String;)V
+  #28 = Utf8               Code
+  #29 = Utf8               LineNumberTable
+  #30 = Utf8               MethodParameters
+  #31 = Utf8               getTitle
+  #32 = Utf8               ()Ljava/lang/String;
+  #33 = Utf8               ()I
+  #34 = Utf8               (Ljava/lang/Object;)Z
+  #35 = Utf8               SourceFile
+  #36 = Utf8               TextBook.java
+  #37 = Utf8               Record
+  #38 = Utf8               BootstrapMethods
+  #39 = MethodHandle       6:#40          // REF_invokeStatic java/lang/runtime/ObjectMethods.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #40 = Methodref          #41.#42        // java/lang/runtime/ObjectMethods.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #41 = Class              #43            // java/lang/runtime/ObjectMethods
+  #42 = NameAndType        #44:#45        // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #43 = Utf8               java/lang/runtime/ObjectMethods
+  #44 = Utf8               bootstrap
+  #45 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+  #46 = String             #11            // subject
+  #47 = MethodHandle       1:#7           // REF_getField newshelf/TextBook.subject:Ljava/lang/String;
+  #48 = Utf8               InnerClasses
+  #49 = Class              #50            // java/lang/invoke/MethodHandles$Lookup
+  #50 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #51 = Class              #52            // java/lang/invoke/MethodHandles
+  #52 = Utf8               java/lang/invoke/MethodHandles
+  #53 = Utf8               Lookup
+{
+  private final java.lang.String subject;
+    descriptor: Ljava/lang/String;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public newshelf.TextBook(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Record."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #7                  // Field subject:Ljava/lang/String;
+         9: return
+      LineNumberTable:
+        line 3: 0
+    MethodParameters:
+      Name                           Flags
+      subject
+
+  public java.lang.String getTitle();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field subject:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 6: 0
+
+  public final java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokedynamic #13,  0             // InvokeDynamic #0:toString:(Lnewshelf/TextBook;)Ljava/lang/String;
+         6: areturn
+      LineNumberTable:
+        line 3: 0
+
+  public final int hashCode();
+    descriptor: ()I
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokedynamic #17,  0             // InvokeDynamic #0:hashCode:(Lnewshelf/TextBook;)I
+         6: ireturn
+      LineNumberTable:
+        line 3: 0
+
+  public final boolean equals(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Z
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokedynamic #21,  0             // InvokeDynamic #0:equals:(Lnewshelf/TextBook;Ljava/lang/Object;)Z
+         7: ireturn
+      LineNumberTable:
+        line 3: 0
+
+  public java.lang.String subject();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field subject:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 3: 0
+}
+SourceFile: "TextBook.java"
+Record:
+  java.lang.String subject;
+    descriptor: Ljava/lang/String;
+
+BootstrapMethods:
+  0: #39 REF_invokeStatic java/lang/runtime/ObjectMethods.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;
+    Method arguments:
+      #8 newshelf/TextBook
+      #46 subject
+      #47 REF_getField newshelf/TextBook.subject:Ljava/lang/String;
+InnerClasses:
+  public static final #53= #49 of #51;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
