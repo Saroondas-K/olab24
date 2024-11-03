@@ -10,6 +10,6 @@ public record TextBook(String subject) implements IBook<String> {
        public int compareTo(IBook<String> o)
        {
 
-       return this.subject .compareTo(o.getTitle());
+       return this.subject.compareTo(o.getTitle());
    }
 }
