@@ -4,16 +4,17 @@ public class NewSelection {
 
   
     public static String getAgeOrTitle(Object o) {
-        if (o instanceof IBook book) {
-            if (book instanceof TextBook textBook) {
-                return textBook.subject();
-            } else if (book instanceof Fiction fiction) {
-                return fiction.name();
-            } else if (book instanceof Comic comic) {
-                return comic.title();
-            }
+       
+        return switch(o){
+          case TextBook(String subject)->subject;
+          case Fiction(String name)->name;
+          case Comic(String title, int ageRating) when ageRating >= 12 -> title;
+          case Comic(String title, int ageRating) -> "Comic not suitable for all ages";
+          case null, default -> "";
+            
+            
         }
-        return "";
+
     }
 
     public static void main(String[] args) {
