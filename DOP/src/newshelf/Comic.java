@@ -10,7 +10,7 @@ public record Comic(String title, int ageOfMainCharacter) implements IBook<Strin
          return this.title.compareTo(other.getTitle());
         
     }
-    public int agerating()
+    public int ageRating()
         { return ageOfMainCharacter;
     }
 }
