@@ -6,13 +6,13 @@ class OldSelectionTest {
 
     @Test
     void testGetAgeOrTitleWithComic() {
-        Comic comic = new Comic("Dylan:The Great Adventures", 12);
-        assertEquals("Dylan:The Great Adventures", OldSelection.getAgeOrTitle(comic));
+        Comic comic = new Comic("Spiderman", 11);
+        assertEquals("Spiderman", OldSelection.getAgeOrTitle(comic));
     }
 
     @Test
     void testGetAgeOrTitleWithTextBook() {
-        TextBook textBook = new TextBook("Social Studies");
+        TextBook textBook = new TextBook("Computer Science");
         assertEquals("Social Studies", OldSelection.getAgeOrTitle(textBook));
     }
 
