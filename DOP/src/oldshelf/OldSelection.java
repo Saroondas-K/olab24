@@ -18,7 +18,7 @@ public static String getAgeOrTitle(Object o) {
         TextBook t = new TextBook("Computer Science");
         System.out.println("Subject of the TextBook: " + getAgeOrTitle(t)); 
         
-        Comic c = new Comic("Spiderman", 12);
+        Comic c = new Comic("Spiderman", 11);
         System.out.println("Title of the Comic: " + getAgeOrTitle(c));
         
         Fiction f = new Fiction("Hangover", FictionType.Comedy);
