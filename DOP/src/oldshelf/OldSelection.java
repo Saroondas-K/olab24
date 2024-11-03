@@ -1,7 +1,10 @@
 package oldshelf;
 public class OldSelection {
 
-   
+   // case Comic:
+   //  Comic comic = (Comic) o;
+   //  return comic.getTitle();
+
 public static String getAgeOrTitle(Object o) {
         return switch (o) {
             case Comic comic -> comic.getTitle();
