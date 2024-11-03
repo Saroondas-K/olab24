@@ -18,8 +18,8 @@ class OldSelectionTest {
 
     @Test
     void testGetAgeOrTitleWithFiction() {
-        Fiction fiction = new Fiction("Pulp Fiction", FictionType.Comedy);
-        assertEquals("Pulp Fiction", OldSelection.getAgeOrTitle(fiction));
+        Fiction fiction = new Fiction("Hangover", FictionType.Comedy);
+        assertEquals("Hangover", OldSelection.getAgeOrTitle(fiction));
     }
 
     @Test
